@@ -1,0 +1,142 @@
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+div.menu nav{
+    background-color: black;
+    color:white;
+    width: 10%;
+    position: absolute;
+    top:0;
+    left: 0;
+    bottom:60px;
+    overflow: hidden;
+}
+
+nav ul{
+    height: 100%;
+    width: 100%;
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+nav ul li{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 10px auto;
+}
+
+.logo{
+    display: none;
+}
+
+div.menu img{
+    width: 25px;
+    height: 25px;
+}
+
+nav img.profile{
+    background-color: gray;
+    border-radius: 50%;
+}
+
+nav img.download{
+    width: 15px;
+    height: 15px;
+    margin-left: 10px;
+}
+
+/*BOTTONE UPGRADE*/
+
+div.upgrade{
+    background-color: rgba(0, 0, 0, 0.9);
+    color: white;
+    width: 90%;
+    height: 60px;
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+div.upgrade span{
+    display: inline-block;
+}
+
+div.bottone{
+    border:1px solid white;
+    border-radius: 20px;
+    cursor: pointer;
+    width: 50%;
+    text-align: center;
+    padding:10px;
+    float: right;
+    font-size: 11px;
+    font-weight: bold;
+    margin-top: 10px;
+    margin-right: 5px;
+    overflow: hidden;
+}
+
+
+/*FOOTER*/
+
+footer{
+    background-color: rgba(0, 0, 0,0.7);
+    height: 60px;
+    width: calc(100%);
+    position: absolute;
+    bottom:0;
+    left: 0;
+}
+
+footer div{
+    height: 100%;
+    float: left;
+}
+
+footer .brano{
+    background-color: red;
+    width: 18%;
+}
+
+footer .preferito{
+    background-color: blue;
+    width: 12%;
+}
+
+footer .play{
+    background-color: red;
+    width: 40%;
+}
+
+footer .volume{
+    background-color: blue;
+    width: 30%;
+}
+
+footer .brano .immagine{
+    background-color: yellow;
+    width:30%;
+}
+
+footer .brano .titolo{
+    background-color: rgb(44, 197, 202);
+    width:70%;
+}
+
+footer .play .icone{
+    background-color: yellow;
+    height:50%;
+    width: 100%;
+}
+
+footer .play .minuto{
+    background-color: rgb(44, 197, 202);
+    height:50%;
+    width: 100%;
+}
