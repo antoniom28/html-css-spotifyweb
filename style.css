@@ -85,12 +85,12 @@ div.bottone{
 
 /*FOOTER*/
 i{
-    font-size: 14px;
+    font-size: 12px;
     color: white;
 }
 
 footer{
-    background-color: rgba(0, 0, 0,0.7);
+    background-color: rgb(51, 51, 51);
     height: 60px;
     width: calc(100%);
     position: absolute;
@@ -147,7 +147,7 @@ footer .preferito i{
 
 footer .preferito{
    /* background-color: blue;*/
-    width: 12%;
+    width: 10%;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -161,7 +161,7 @@ footer .play{
     
 }
 footer .play .icone{
-    background-color: orangered;
+    /*background-color: orangered;*/
     height:50%;
     width: 100%;
     display: flex;
@@ -169,20 +169,42 @@ footer .play .icone{
     align-items: center;
 }
 footer .play .minuto{
-    background-color: rgb(44, 197, 202);
+    /*background-color: rgb(44, 197, 202);*/
     height:50%;
     width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+footer .play .minuto span{
+    font-size: 9px;
+    color: white;
+}
+i.fa-play-circle{
+    font-size: 23px;
+}
+footer .play .minuto .input-volume{
+    width: 60%;
 }
 
 /*DIV CONTROLLO VOLUME*/
 footer .volume{
     /*background-color: blue;*/
-    width: 30%;
+    width: 32%;
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     align-items: center;
 }
 
-input.styled-slider{
+div.input-volume{
     width: 50%;
+    height: 4px;
+    border-radius: 5px;
+    background-color: white;
+    overflow: hidden;
+}
+.che-brutto-farlo-col-div{
+    width: 30%;
+    height: 4px;
+    background-color: #cecece;
 }
