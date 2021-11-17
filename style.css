@@ -84,6 +84,10 @@ div.bottone{
 
 
 /*FOOTER*/
+i{
+    font-size: 14px;
+    color: white;
+}
 
 footer{
     background-color: rgba(0, 0, 0,0.7);
@@ -97,46 +101,88 @@ footer{
 footer div{
     height: 100%;
     float: left;
+    /*color: white;*/
 }
 
+/*DIV BRANO SELEZIONATO*/
 footer .brano{
-    background-color: red;
+    /*background-color: red;*/
     width: 18%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
-
-footer .preferito{
-    background-color: blue;
-    width: 12%;
-}
-
-footer .play{
-    background-color: red;
-    width: 40%;
-}
-
-footer .volume{
-    background-color: blue;
-    width: 30%;
-}
-
 footer .brano .immagine{
-    background-color: yellow;
-    width:30%;
+    overflow: hidden;
+    /*background-color: yellow;*/
+    height: 40%;
+    width:45%;
+}
+footer .brano .immagine img{
+    width: 100%;
+    height: 100%;
 }
 
 footer .brano .titolo{
-    background-color: rgb(44, 197, 202);
+    /*background-color: rgb(44, 197, 202);*/
     width:70%;
+    height: 40%;
+    font-size:7px;
 }
 
+footer .brano .titolo h5{
+    color: white;
+}
+footer .brano .titolo span{
+    display: block;
+    line-height: 1;
+    color:gray;
+}
+
+/*ICONA CUORE*/
+
+footer .preferito i{
+    display: block;
+}
+
+footer .preferito{
+   /* background-color: blue;*/
+    width: 12%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+/*DIV CONTROLLO MUSICA*/
+footer .play{
+   /* background-color: red;*/
+    width: 40%;
+    
+}
 footer .play .icone{
-    background-color: yellow;
+    background-color: orangered;
     height:50%;
     width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
 }
-
 footer .play .minuto{
     background-color: rgb(44, 197, 202);
     height:50%;
     width: 100%;
+}
+
+/*DIV CONTROLLO VOLUME*/
+footer .volume{
+    /*background-color: blue;*/
+    width: 30%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+input.styled-slider{
+    width: 50%;
 }
