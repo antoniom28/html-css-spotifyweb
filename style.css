@@ -54,7 +54,7 @@ nav img.download{
 /*BOTTONE UPGRADE*/
 
 div.upgrade{
-    background-color: rgba(0, 0, 0, 0.9);
+    background-color: rgba(0, 0, 0, 0.8);
     color: white;
     width: 90%;
     height: 60px;
@@ -82,8 +82,87 @@ div.bottone{
     overflow: hidden;
 }
 
+/*MAIN MAIN MAIN MAIN MAIN MAIN MAIN */
+main{
+    background: #1d1d24;
+    position: absolute;
+    z-index: -1;
+    top: 0;
+    bottom: 60px;
+    left: 10%;
+    right: 0;
+    overflow: auto;
+}
 
-/*FOOTER*/
+section.main{
+    /*background-color: blue;*/
+    min-height: calc(100% - 60px);
+    width: 100%;
+    position: relative;
+    top:60px;
+}
+
+main section.menu{
+    /*background-color: skyblue;*/
+    width: 100%;
+    color: grey;
+}
+
+main section.musica-recente{
+    /*background-color: thistle;*/
+    width: 100%;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-evenly;
+}
+
+.musica-recente .titolo{
+    width: 48%;
+    margin: 15px 0;
+    margin-right: 50%;
+    font-size: 22px;
+    color: white;
+
+}
+
+main .menu ul{
+    list-style: none;
+    display: flex;
+    justify-content:center;
+    flex-flow: row wrap;
+}
+main .menu li{
+    margin: 8px 8px;
+    font-size: 12px;
+    text-transform: uppercase;
+}
+
+main section .brani{
+    width: 45%;
+}
+main section .immagine img{
+    width: 100%;
+}
+main .testo{
+    width: 100%;
+}
+
+section.musica-recente .testo h5{
+    margin:10px 0;
+    font-size: 16px;
+    text-align: center;
+    color:white;
+}
+section.musica-recente .testo span{
+    margin:10px 0;
+    font-size: 16px;
+    text-align: center;
+    display: block;
+    font-size: 13px;
+    color:grey;
+}
+
+/*FOOTER FOOTER FOOTER FOOTER FOOTER */
 i{
     font-size: 12px;
     color: white;
@@ -107,16 +186,16 @@ footer div{
 /*DIV BRANO SELEZIONATO*/
 footer .brano{
     /*background-color: red;*/
-    width: 18%;
+    width: 20%;
     display: flex;
-    justify-content: center;
+    justify-content: space-around;
     align-items: center;
 }
 footer .brano .immagine{
     overflow: hidden;
     /*background-color: yellow;*/
-    height: 40%;
-    width:45%;
+    height: 45%;
+    width:35%;
 }
 footer .brano .immagine img{
     width: 100%;
@@ -125,9 +204,9 @@ footer .brano .immagine img{
 
 footer .brano .titolo{
     /*background-color: rgb(44, 197, 202);*/
-    width:70%;
-    height: 40%;
-    font-size:7px;
+    width:50%;
+    height: 55%;
+    font-size:12px;
 }
 
 footer .brano .titolo h5{
@@ -147,7 +226,7 @@ footer .preferito i{
 
 footer .preferito{
    /* background-color: blue;*/
-    width: 10%;
+    width: 6%;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -157,7 +236,7 @@ footer .preferito{
 /*DIV CONTROLLO MUSICA*/
 footer .play{
    /* background-color: red;*/
-    width: 40%;
+    width: 42%;
     
 }
 footer .play .icone{
