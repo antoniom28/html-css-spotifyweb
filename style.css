@@ -31,6 +31,15 @@ nav ul li{
     margin: 10px auto;
 }
 
+nav ul li:hover{
+    cursor: pointer;
+    color: white;
+}
+nav ul li:active{
+    cursor: pointer;
+    color: white;
+}
+
 .logo{
     display: none;
 }
@@ -60,7 +69,7 @@ div.upgrade{
     height: 60px;
     position: absolute;
     top: 0;
-    right: 0;
+    left: 10%;
 }
 
 div.upgrade span{
@@ -70,7 +79,6 @@ div.upgrade span{
 div.bottone{
     border:1px solid white;
     border-radius: 20px;
-    cursor: pointer;
     width: 50%;
     text-align: center;
     padding:10px;
@@ -78,8 +86,17 @@ div.bottone{
     font-size: 11px;
     font-weight: bold;
     margin-top: 10px;
-    margin-right: 5px;
+    margin-right: 10px;
     overflow: hidden;
+}
+
+div.bottone:hover{
+    cursor: pointer;
+    transform: scale(1.1);
+}
+div.bottone:active{
+    cursor: pointer;
+    transform: scale(1.1);
 }
 
 /*MAIN MAIN MAIN MAIN MAIN MAIN MAIN */
@@ -108,7 +125,7 @@ main section.menu{
     color: grey;
 }
 
-main section.musica-recente{
+main .brani-principali{
     /*background-color: thistle;*/
     width: 100%;
     display: flex;
@@ -116,10 +133,10 @@ main section.musica-recente{
     justify-content: space-evenly;
 }
 
-.musica-recente .titolo{
-    width: 48%;
-    margin: 15px 0;
-    margin-right: 50%;
+.brani-principali .titolo{
+    width: 80%;
+    margin: 20px 0;
+    margin-right: 13%;
     font-size: 22px;
     color: white;
 
@@ -136,6 +153,10 @@ main .menu li{
     font-size: 12px;
     text-transform: uppercase;
 }
+main .menu li:hover{
+    color: white;
+    cursor: pointer;
+}
 
 main section .brani{
     width: 45%;
@@ -147,13 +168,13 @@ main .testo{
     width: 100%;
 }
 
-section.musica-recente .testo h5{
+section.brani-principali .testo h5{
     margin:10px 0;
     font-size: 16px;
     text-align: center;
     color:white;
 }
-section.musica-recente .testo span{
+section.brani-principali .testo span{
     margin:10px 0;
     font-size: 16px;
     text-align: center;
@@ -161,6 +182,38 @@ section.musica-recente .testo span{
     font-size: 13px;
     color:grey;
 }
+
+section.musica-johndoe .titolo p,
+section.artisti-popolari .titolo p{
+    color: grey;
+    font-size: 13px;
+}
+
+/*MAIN HOVER*/
+
+.brani-principali .brani div.immagine{
+    position: relative;
+}
+.brani-principali .brani div.immagine:hover::after,
+.brani-principali .brani div.immagine:active::after{
+    content: "\f144";
+    font-family: FontAwesome;
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 100px;
+    color: white;
+    cursor: pointer;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+
+
 
 /*FOOTER FOOTER FOOTER FOOTER FOOTER */
 i{
@@ -218,11 +271,31 @@ footer .brano .titolo span{
     color:gray;
 }
 
+footer .brano .titolo span:hover{
+    cursor: pointer;
+    text-decoration: underline;
+}
+footer .brano .titolo span:active{
+    cursor: pointer;
+    text-decoration: underline;
+}
+
 /*ICONA CUORE*/
 
 footer .preferito i{
     display: block;
+    color: grey;
 }
+
+footer .preferito i:hover{
+    cursor: pointer;
+    color:white
+}
+footer .preferito i:active{
+    cursor: pointer;
+    color:white
+}
+
 
 footer .preferito{
    /* background-color: blue;*/
@@ -259,8 +332,15 @@ footer .play .minuto span{
     font-size: 9px;
     color: white;
 }
+
 i.fa-play-circle{
     font-size: 23px;
+}
+i.fa-play-circle:hover{
+    transform: scale(1.1);
+}
+i.fa-play-circle:active{
+    transform: scale(1.1);
 }
 footer .play .minuto .input-volume{
     width: 60%;
@@ -279,9 +359,17 @@ div.input-volume{
     width: 50%;
     height: 4px;
     border-radius: 5px;
-    background-color: white;
+    background-color:rgb(68, 68, 68);
     overflow: hidden;
 }
+
+div.input-volume:hover{
+    cursor: pointer;
+}
+div.input-volume:hover .che-brutto-farlo-col-div{
+    background-color: yellowgreen;
+}
+
 .che-brutto-farlo-col-div{
     width: 30%;
     height: 4px;
