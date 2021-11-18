@@ -161,7 +161,6 @@ main .brani-principali{
     margin-right: 13%;
     font-size: 40px;
     color: white;
-
 }
 
 main .menu ul{
@@ -216,8 +215,18 @@ section.artisti-popolari .titolo p{
 .brani-principali .brani div.immagine{
     position: relative;
 }
-.brani-principali .brani div.immagine:hover::after,
-.brani-principali .brani div.immagine:active::after{
+
+.brani-principali.artisti-popolari div.immagine{
+    border-radius: 50%;
+    overflow: hidden;
+}
+
+.brani-principali .brani:hover{
+    cursor: pointer;
+}
+
+.brani-principali .brani:hover div.immagine::after,
+.brani-principali .brani:active div.immagine::after{
     content: "\f144";
     font-family: FontAwesome;
     position: absolute;
@@ -230,7 +239,6 @@ section.artisti-popolari .titolo p{
     align-items: center;
     font-size: 100px;
     color: white;
-    cursor: pointer;
     background-color: rgba(0, 0, 0, 0.5);
 }
 
