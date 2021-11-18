@@ -7,7 +7,7 @@
 div.menu nav{
     background-color: black;
     color:white;
-    width: 10%;
+    width: 40px;
     position: absolute;
     top:0;
     left: 0;
@@ -31,7 +31,13 @@ nav ul li{
     margin: 10px auto;
 }
 
-nav ul li:hover{
+nav ul li span{
+    display: none;
+}
+
+nav ul li:hover span,
+nav ul li:hover i.fas,
+nav ul li:hover i.far{
     cursor: pointer;
     color: white;
 }
@@ -60,16 +66,32 @@ nav img.download{
     margin-left: 10px;
 }
 
+i.fas.fa-plus-square {
+    display: block;
+    font-size: 35px;
+    color: gray;
+}
+
+.menu .icone-sopra div.playlist {
+    display: none;
+}
+.menu .icone-sotto hr{
+    display: none;
+}
+.menu .icone-sotto{
+    z-index: 1;
+    background: black;
+}
 /*BOTTONE UPGRADE*/
 
 div.upgrade{
     background-color: rgba(0, 0, 0, 0.8);
     color: white;
-    width: 90%;
     height: 60px;
     position: absolute;
     top: 0;
-    left: 10%;
+    left:40px;
+    right: 0;
 }
 
 div.upgrade span{
@@ -79,14 +101,14 @@ div.upgrade span{
 div.bottone{
     border:1px solid white;
     border-radius: 20px;
-    width: 50%;
+    min-width: 40%;
     text-align: center;
     padding:10px;
     float: right;
     font-size: 11px;
     font-weight: bold;
     margin-top: 10px;
-    margin-right: 10px;
+    margin-right: 20px;
     overflow: hidden;
 }
 
@@ -106,7 +128,7 @@ main{
     z-index: -1;
     top: 0;
     bottom: 60px;
-    left: 10%;
+    left: 40px;
     right: 0;
     overflow: auto;
 }
@@ -135,9 +157,9 @@ main .brani-principali{
 
 .brani-principali .titolo{
     width: 80%;
-    margin: 20px 0;
+    margin: 20px 10px;
     margin-right: 13%;
-    font-size: 22px;
+    font-size: 40px;
     color: white;
 
 }
@@ -228,6 +250,8 @@ footer{
     position: absolute;
     bottom:0;
     left: 0;
+    display: flex;
+    justify-content: space-between;
 }
 
 footer div{
@@ -239,16 +263,16 @@ footer div{
 /*DIV BRANO SELEZIONATO*/
 footer .brano{
     /*background-color: red;*/
-    width: 20%;
+    width: 135px;
     display: flex;
-    justify-content: space-around;
     align-items: center;
 }
 footer .brano .immagine{
     overflow: hidden;
     /*background-color: yellow;*/
-    height: 45%;
-    width:35%;
+    height: 35px;
+    width:40px;
+    margin: 0 10px;
 }
 footer .brano .immagine img{
     width: 100%;
@@ -257,8 +281,8 @@ footer .brano .immagine img{
 
 footer .brano .titolo{
     /*background-color: rgb(44, 197, 202);*/
-    width:50%;
-    height: 55%;
+    height: 60%;
+    width: 45px;
     font-size:12px;
 }
 
@@ -266,7 +290,6 @@ footer .brano .titolo h5{
     color: white;
 }
 footer .brano .titolo span{
-    display: block;
     line-height: 1;
     color:gray;
 }
@@ -299,7 +322,6 @@ footer .preferito i:active{
 
 footer .preferito{
    /* background-color: blue;*/
-    width: 6%;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -309,13 +331,13 @@ footer .preferito{
 /*DIV CONTROLLO MUSICA*/
 footer .play{
    /* background-color: red;*/
-    width: 42%;
-    
+    width: 50%;
 }
+
 footer .play .icone{
     /*background-color: orangered;*/
     height:50%;
-    width: 100%;
+    width:100%;
     display: flex;
     justify-content: space-around;
     align-items: center;
@@ -342,6 +364,7 @@ i.fa-play-circle:hover{
 i.fa-play-circle:active{
     transform: scale(1.1);
 }
+
 footer .play .minuto .input-volume{
     width: 60%;
 }
@@ -349,22 +372,36 @@ footer .play .minuto .input-volume{
 /*DIV CONTROLLO VOLUME*/
 footer .volume{
     /*background-color: blue;*/
-    width: 32%;
+    width: 30%;
     display: flex;
     justify-content: space-around;
     align-items: center;
 }
 
 div.input-volume{
-    width: 50%;
+    width: 40%;
     height: 4px;
     border-radius: 5px;
     background-color:rgb(68, 68, 68);
-    overflow: hidden;
+}
+
+div.sfera {
+    width: 15px;
+    height: 15px;
+    position: relative;
+    bottom: 6px;
+    right: 6px;
+    border-radius: 10px;
+    background-color: yellowgreen;
+    display: none;
 }
 
 div.input-volume:hover{
     cursor: pointer;
+}
+
+div.input-volume:hover div.sfera{
+    display: block;
 }
 div.input-volume:hover .che-brutto-farlo-col-div{
     background-color: yellowgreen;
@@ -372,6 +409,132 @@ div.input-volume:hover .che-brutto-farlo-col-div{
 
 .che-brutto-farlo-col-div{
     width: 30%;
-    height: 4px;
+    height: 100%;
     background-color: #cecece;
+}
+
+
+
+
+
+/**/
+@media (min-width: 576px){
+div.menu nav {
+    width: 200px;
+}
+div.upgrade {
+    left: 200px;    
+}
+main {
+    left: 200px;    
+}
+
+nav ul li{
+    justify-content: flex-start;
+}
+
+.logo{
+    display: flex;
+    margin: 10px 0;
+}
+img.logo{
+    width: 100px!important;
+    height: 30px!important;
+}
+
+.logo-small{
+    display: none;
+}
+
+nav ul li span{
+    display: block;
+    color: gray;
+    font-size: 14px;
+    margin-left:10px;
+}
+nav ul li.profile span{
+    color: white;
+}
+
+.menu .icone-sopra div.playlist {
+    display: block;
+    margin: 30px 0;
+}
+
+.menu .icone-sopra div.playlist .nome-playlist-scroll {
+    overflow: auto;
+    top: 260px;
+    bottom: 70px;
+    position: absolute;
+    min-height: 84px;
+    width: 70%;
+}
+
+.menu .icone-sopra div.playlist .nome-playlist-scroll span{
+    margin-left: 0;
+}
+
+.menu .icone-sotto hr{
+    display: block;
+    width: 80%;
+    transform: scaley(0.2);
+}
+
+footer .brano{
+    width: 160px;
+}
+footer .brano .titolo{
+    width: 80px;
+}
+footer .brano .immagine{
+    width: 50px;
+}
+footer .volume {
+    width: 25%;
+}
+footer .play {
+    width: 45%;
+}
+
+nav ul{  
+    margin-left: 10%;
+    width: 90%;
+}
+nav img.download {
+    margin-left: 0;
+}
+}
+
+
+@media (min-width: 768px){
+    main section .brani {
+        width: 23%;
+        margin: 0px 1%;
+    }
+
+    main .brani-principali {
+        justify-content:unset;
+        width: 98%;
+        margin: 0 1%;
+    }
+
+    footer .play .icone{
+        width: 300px;
+    }
+    footer .play{
+         display: flex;
+         flex-direction: column;
+         align-items: center;
+     }
+}
+
+@media (min-width: 992px){
+    main section .brani {
+        width: 14.667%;
+        margin: 0px 1%;
+    }
+    div.bottone {
+        min-width: 320px;
+        margin-right: 5%;
+    }
 }
