@@ -557,3 +557,14 @@ div.input-volume:hover .che-brutto-farlo-col-div{
         margin-right: 5%;
     }
 }
+
+
+/*BONUS*/
+
+@media screen and (max-height:350px) {
+    div.upgrade{
+        display: none;
+    }    
+}
+
+
