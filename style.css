@@ -279,7 +279,7 @@ footer div{
 /*DIV BRANO SELEZIONATO*/
 footer .brano{
     /*background-color: red;*/
-    width: 135px;
+    width: 125px;
     display: flex;
     align-items: center;
 }
@@ -347,7 +347,7 @@ footer .preferito{
 /*DIV CONTROLLO MUSICA*/
 footer .play{
    /* background-color: red;*/
-    width: 50%;
+    width: 40%;
 }
 
 footer .play .icone{
@@ -388,7 +388,7 @@ footer .play .minuto .input-volume{
 /*DIV CONTROLLO VOLUME*/
 footer .volume{
     /*background-color: blue;*/
-    width: 30%;
+    width: 25%;
     display: flex;
     justify-content: space-around;
     align-items: center;
@@ -497,7 +497,7 @@ div.input-volume:hover .che-brutto-farlo-col-div{
     }
 
     footer .brano{
-        width: 220px;
+        width: 180px;
     }
     footer .brano .titolo{
         width: 80px;
@@ -506,10 +506,10 @@ div.input-volume:hover .che-brutto-farlo-col-div{
         width: 50px;
     }
     footer .volume {
-        width: 25%;
+        width: 20%;
     }
     footer .play {
-        width: 45%;
+        width: 40%;
     }
 
     nav ul{  
