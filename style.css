@@ -35,7 +35,7 @@ nav ul li span{
     display: none;
 }
 
-/*nav ul li:hover span,
+nav ul li:hover span,
 nav ul li:hover i.fas,
 nav ul li:hover i.far{
     cursor: pointer;
@@ -44,7 +44,7 @@ nav ul li:hover i.far{
 nav ul li:active{
     cursor: pointer;
     color: white;
-}*/
+}
 
 .logo{
     display: none;
