@@ -698,7 +698,7 @@ input#playlist{
     z-index: 1;
 }
 
-label[for="playlist"]{
+label[class="playlist"]{
     /*riga 480 modalità precedente*/
     overflow: auto;
     top: 275px;
@@ -709,12 +709,12 @@ label[for="playlist"]{
     left: 10%;
 }
 
-label[for="playlist"]{
+label[class="playlist"]{
     left: -150px;
     transition: all 1.2s ease 0s;
 }
 
-#playlist:checked ~ label[for="playlist"]{
+#playlist:checked ~ label[class="playlist"]{
     left: 10%;
     transition: all 1.2s ease 0s;
 }
