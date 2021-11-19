@@ -35,7 +35,7 @@ nav ul li span{
     display: none;
 }
 
-nav ul li:hover span,
+/*nav ul li:hover span,
 nav ul li:hover i.fas,
 nav ul li:hover i.far{
     cursor: pointer;
@@ -44,7 +44,7 @@ nav ul li:hover i.far{
 nav ul li:active{
     cursor: pointer;
     color: white;
-}
+}*/
 
 .logo{
     display: none;
@@ -477,15 +477,15 @@ div.input-volume:hover .che-brutto-farlo-col-div{
         margin: 30px 0;
     }
 
-    .menu .icone-sopra div.playlist .nome-playlist-scroll {
+    /*.menu .icone-sopra div.playlist .nome-playlist-scroll {
         overflow: auto;
         top: 260px;
         bottom: 70px;
         position: absolute;
         min-height: 84px;
         width: 70%;
-    }
-
+    }*/
+    
     .menu .icone-sopra div.playlist .nome-playlist-scroll span{
         margin-left: 0;
     }
@@ -666,4 +666,53 @@ div.bottone::after{
     100%{
         opacity: 0;
     }
+}
+
+input#playlist{
+    position: relative;
+    top: 10px;
+    right: 0px;
+    width: 90%;
+    height: 36px;
+    opacity: 0;
+    cursor: pointer;
+    z-index: 1;
+}
+
+label[for="playlist"]{
+    /*riga 480 modalità precedente*/
+    overflow: auto;
+    top: 275px;
+    bottom: 70px;
+    position: absolute;
+    min-height: 84px;
+    width: 70%;
+    left: 10%;
+}
+
+label[for="playlist"]{
+    left: -150px;
+    transition: all 1.2s ease 0s;
+}
+
+#playlist:checked ~ label[for="playlist"]{
+    left: 10%;
+    transition: all 1.2s ease 0s;
+}
+
+label[for="crea-playlist"]{
+    position: relative;
+    top: -40px;
+}
+
+/*modalità precedente da riga 38*/
+#playlist:hover ~ label[for="crea-playlist"] span,
+#playlist:hover ~ label[for="crea-playlist"] i.fas,
+#playlist:hover ~ label[for="crea-playlist"] i.far{
+    cursor: pointer;
+    color: white;
+}
+nav ul input#playlist:active{
+    cursor: pointer;
+    color: white;
 }
