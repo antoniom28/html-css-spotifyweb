@@ -159,7 +159,7 @@ main .brani-principali{
     width: 80%;
     margin: 20px 10px;
     margin-right: 13%;
-    font-size: 40px;
+    font-size: 25px;
     color: white;
 }
 
@@ -199,23 +199,23 @@ main .testo{
 
 section.brani-principali .testo h5{
     margin:10px 0;
-    font-size: 16px;
+    font-size: 14px;
     text-align: center;
     color:white;
 }
+
 section.brani-principali .testo span{
     margin:10px 0;
-    font-size: 16px;
     text-align: center;
     display: block;
-    font-size: 13px;
+    font-size: 11px;
     color:grey;
 }
 
 section.musica-johndoe .titolo p,
 section.artisti-popolari .titolo p{
     color: grey;
-    font-size: 13px;
+    font-size: 12px;
 }
 
 /*MAIN HOVER*/
@@ -544,8 +544,27 @@ div.input-volume:hover .che-brutto-farlo-col-div{
          display: flex;
          flex-direction: column;
          align-items: center;
-     }
+    }
+
+    .brani-principali .titolo{
+         font-size:35px;
+    }
+
+    section.brani-principali .testo span{
+        font-size:13px;
+    }
+
+    section.brani-principali .testo h5{
+        font-size:16px;
+    }
+
+    section.musica-johndoe .titolo p,
+    section.artisti-popolari .titolo p{
+        font-size:14px;
+    }
+
 }
+
 
 @media (min-width: 992px){
     main section .brani {
