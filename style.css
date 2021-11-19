@@ -567,4 +567,20 @@ div.input-volume:hover .che-brutto-farlo-col-div{
     }    
 }
 
+@media (max-width: 576px){
+    .musica-recente .brani:nth-of-type(1n+4){
+        display: none;
+    }
+}
 
+@media (max-width: 768px){
+    .musica-recente .brani:nth-of-type(1n+4){
+        display: none;
+    }
+}
+
+@media (max-width: 992px){
+    .musica-recente .brani:nth-of-type(1n+6){
+        display: none;
+    }
+}
