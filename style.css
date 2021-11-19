@@ -639,7 +639,6 @@ div.bottone::after{
     width: 100%;
     height: 32px;
     animation: colorato 2s 0.3s linear 2;
-    anim
 }
 
 @keyframes colorato{
@@ -650,12 +649,10 @@ div.bottone::after{
         border-right: 0px;
         background-color: rgba(255, 255, 255,0.2);
     }
-
     25%{
         width: 50%;
         
     }
-
     50%{
         width: 80%;
         border-right: 1px;
